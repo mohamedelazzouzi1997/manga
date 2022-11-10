@@ -9,6 +9,7 @@
         </svg>
       </button>
     </div>
+
     <nav :class="{'block': open, 'hidden': !open}" class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
       <a href="{{ route('dashboard') }}" class=" @if (request()->routeIs('dashboard')) bg-gray-300 text-gray-900 @else text-gray-300 @endif block px-4 py-2 mt-2 text-sm font-semibold  rounded-lg dark-mode:bg-gray-300 dark-mode:hover:bg-gray-300 dark-mode:focus:bg-gray-300 dark-mode:focus:text-white dark-mode:hover:text-white900rk-mode:text-gray-300 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none focus:shadow-outline">Manga</a>
       <a href="{{ route('category.index') }}" class=" @if (request()->routeIs('category.index')) bg-gray-300 text-gray-900 @else text-gray-300 @endif block px-4 py-2 mt-2 text-sm font-semibold  rounded-lg dark-mode:bg-gray-300 dark-mode:hover:bg-gray-300 dark-mode:focus:bg-gray-300 dark-mode:focus:text-white dark-mode:hover:text-white900rk-mode:text-gray-300 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none focus:shadow-outline">Categories</a>
